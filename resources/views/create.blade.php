@@ -7,7 +7,7 @@
                 <a href="{{route('index')}}" class="btn btn-secondary px-4">Geri</a>
             </div>
             <div class="card-body">
-                <form id="form_post">
+                <form id="form_post" enctype="multipart/form-data">
                     <div class="row">
                         <div class="col-3">
                             <div class="form-group row mb-3">
