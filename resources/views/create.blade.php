@@ -9,6 +9,30 @@
             <div class="card-body">
                 <form id="form_post">
                     <div class="row">
+                        <div class="col-3">
+                            <div class="form-group row mb-3">
+                                <label for="form_file" class="col-form-label">
+                                    Dosya<span class="text-danger">*</span>
+                                </label>
+                                <div class="button_outer">
+                                    <div class="btn_upload">
+                                        <input type="file" name="form_file" id="form_file"
+                                               accept=".png, .jpg, .jpeg,.doc,.docx,.xls,.xlsx,.pdf"/><i
+                                            class="fas fa-cloud-upload-alt icon-custom-color icon-md mr-3"></i><span
+                                            class="font-size-lg">Dosya Ekle</span>
+                                        <input type="hidden" name="profile_avatar_remove"/>
+                                    </div>
+                                    <div class="processing_bar"></div>
+                                    <div class="success_box"></div>
+                                </div>
+                                <div class="error_msg text-center"></div>
+                                <div class="uploaded_file_view" id="uploaded_view">
+                                    <span class="file_remove">X</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
                         <div class="col-6">
                             <div class="form-group row mb-3">
                                 <label for="title" class="col-form-label">Title<span
