@@ -15,7 +15,7 @@
                                         class="text-danger">*</span></label>
                                 <input class="form-control required"
                                        placeholder="Title" type="text" name="title"
-                                       id="title"/>
+                                       id="title" value="{{$post->title}}"/>
                             </div>
                         </div>
                     </div>
@@ -26,16 +26,17 @@
                                     Açıklama</label>
                                 <textarea class="form-control" rows="3" name="description"
                                           id="description"
-                                          maxlength="100"></textarea>
+                                          maxlength="100">{{$post->description}}</textarea>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="card-footer mt-3 d-flex justify-content-end">
-                <button type="submit" class="btn btn-success px-4" id="btn_create_post">Create</button>
+                <button type="submit" class="btn btn-success px-4" id="btn_save_post" data-value={{$post->id}}>Save</button>
             </div>
         </div>
     </div>
 @endsection
+
 

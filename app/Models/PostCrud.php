@@ -18,5 +18,5 @@ class PostCrud extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['title', 'description','uuid'];
+    protected $fillable = ['title', 'description'];
 }

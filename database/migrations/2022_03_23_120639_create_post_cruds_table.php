@@ -15,7 +15,6 @@ class CreatePostCrudsTable extends Migration
     {
         Schema::create('post_cruds', function (Blueprint $table) {
             $table->id();
-            $table->uuid("uuid");
             $table->string('title');
             $table->string('description');
             $table->timestamps();

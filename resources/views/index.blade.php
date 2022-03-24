@@ -22,9 +22,9 @@
                             <td class="w-50">{{$post->title}}</td>
                             <td class="w-40">
                                 <div class="d-flex justify-content-center">
-                                    <a href="{{route('show')}}" class="btn btn-success me-2">Show</a>
-                                    <button class="btn btn-warning me-2">Edit</button>
-                                    <button class="btn btn-danger me-2">Delete</button>
+                                    <a href="{{route("show",$post->id)}}" class="btn btn-success me-2">Show</a>
+                                    <a href="{{route("edit",$post->id)}}" class="btn btn-warning me-2">Edit</a>
+                                    <a href="{{route("delete",$post->id)}}" class="btn btn-danger me-2">Delete</a>
                                 </div>
                             </td>
                         </tr>

@@ -21,4 +21,7 @@ use \App\Http\Controllers\PostCrudController;
 Route::get('/', [PostCrudController::class, 'index'])->name('index');
 Route::post('/', [PostCrudController::class, 'store'])->name('store');
 Route::get('/create', [PostCrudController::class, 'create'])->name('create');
-Route::get('/show', [PostCrudController::class, 'show'])->name('show');
+Route::get('/show/{id}', [PostCrudController::class, 'show'])->name('show');
+Route::get('/edit/{id}', [PostCrudController::class, 'edit'])->name('edit');
+Route::post('/update', [PostCrudController::class, 'update'])->name('update');
+Route::get('/delete/{id}', [PostCrudController::class, 'destroy'])->name('delete');
